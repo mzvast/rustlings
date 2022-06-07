@@ -1,11 +1,14 @@
 // enums2.rs
 // Make me compile! Execute `rustlings hint enums2` for hints!
 
-// I AM NOT DONE
 
 #[derive(Debug)]
+// enum 像是一堆struct的集合
 enum Message {
-    // TODO: define the different variants used below
+    Move { x: i32, y: i32 }, // c风格
+    Echo(String),// tuple
+    ChangeColor(i32, i32, i32),
+    Quit,// unit
 }
 
 impl Message {
